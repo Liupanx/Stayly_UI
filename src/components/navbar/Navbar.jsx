@@ -1,0 +1,41 @@
+import "./navbar.scss"
+import { useState } from "react"
+
+function Navbar() {
+    const [open, setOpen] = useState(false)
+    return (
+        <nav>
+            <div className='left'>
+                <a href="/" className='logo'>
+                    <img src="/logo.png" alt="" />
+                    <span>Stayly</span>
+                </a>
+                <a href="/about">Home</a>
+                <a href="/contact">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/contact">Review</a>
+            </div>
+            <div className='right'>
+                <a href="/">Sign in</a>
+                <a href="/" className='register'>Sign up</a>
+                <div className="menuIcon">
+                    <img
+                        src="/menu.png"
+                        alt=""
+                        onClick={() => setOpen((prev) => !prev)}
+                    />
+                </div>
+                <div className={open ? "menu active" : "menu"}>
+                    <a href="/about">Home</a>
+                    <a href="/contact">About</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/contact">Review</a>
+                    <a href="/">Sign in</a>
+                    <a href="/">Sign up</a>
+                </div>
+            </div>
+        </nav >
+    )
+}
+
+export default Navbar;
