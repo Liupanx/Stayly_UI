@@ -1,3 +1,5 @@
+@use "../../responsive.scss" as *;
+
 .homePage {
     display: flex;
     height: 100vh;
@@ -13,16 +15,37 @@
             gap: 30px;
             height: 100%;
 
+            @include tablet {
+                padding: 0;
+            }
+
+            @include mobile {
+                justify-content: flex-start;
+            }
+
             .title {
                 font-size: 64px;
+
+                @include laptop {
+                    font-size: 48px;
+                }
             }
 
             .boxes {
                 display: flex;
                 justify-content: space-between;
 
+                @include mobile {
+                    display: none;
+                }
+
+
                 h1 {
                     font-size: 36px;
+
+                    @include laptop {
+                        font-size: 32px;
+                    }
                 }
 
                 h2 {
@@ -40,9 +63,18 @@
         display: flex;
         align-items: center;
 
+        @include tablet {
+            display: none;
+        }
+
         .img {
             width: 100%;
             position: absolute;
+
+            @include laptop {
+                width: 150%;
+
+            }
         }
     }
 }
