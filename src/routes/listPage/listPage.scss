@@ -13,12 +13,14 @@
             flex-direction: column;
             gap: 50px;
             overflow-y: scroll;
+            padding: 50px;
         }
     }
 
     .mapContainer {
         flex: 2;
-        background-color: red;
+        height: 100%;
+        background-color: azure;
     }
 
 
