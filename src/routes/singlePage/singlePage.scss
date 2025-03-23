@@ -1,9 +1,24 @@
+@import "../../responsive.scss";
+
 .singlePage {
     display: flex;
     height: 100%;
 
+    @include tablet {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
     .details {
         flex: 3;
+        height: 100%;
+        overflow-y: scroll;
+
+        @include tablet {
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+        }
 
         .wrapper {
             padding-right: 50px;
@@ -75,6 +90,14 @@
     .features {
         flex: 2;
         background-color: #ddfdf2;
+        height: 100%;
+        overflow-y: scroll;
+
+        @include tablet {
+            flex: none;
+            height: max-content;
+            margin-bottom: 50px;
+        }
 
         .wrapper {
             padding: 0px 20px;
@@ -133,6 +156,11 @@
             .sizes {
                 display: flex;
                 justify-content: space-between;
+
+                @include laptop {
+                    font-size: 12px;
+                }
+
 
                 .size {
                     display: flex;
