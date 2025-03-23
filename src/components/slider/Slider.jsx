@@ -4,9 +4,17 @@ function Slider({ images = [] }) {
     if (!images.length) return null;
     return (
         <div className="slider">
-            {/* <div className="fullSlider">
-                <div></div>
-            </div> */}
+            <div className="fullSlider">
+                <div className='arrow'>
+                    <img src="/arrow.png" alt="" />
+                </div>
+                <div className='imgContainer'>
+                    <img src={images[0]} alt="" />
+                </div>
+                <div className='arrow'>
+                    <img src="/arrow.png" alt="" />
+                </div>
+            </div>
             <div className="bigImage">
                 <img src={images[0]} alt="" />
             </div>
