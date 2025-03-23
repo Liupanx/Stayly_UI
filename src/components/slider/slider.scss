@@ -17,9 +17,16 @@
 
         .arrow {
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             img {
                 width: 50px;
+
+                &.right {
+                    transform: rotate(180deg);
+                }
             }
         }
 

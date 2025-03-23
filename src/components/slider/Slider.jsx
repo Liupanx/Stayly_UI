@@ -12,7 +12,7 @@ function Slider({ images = [] }) {
                     <img src={images[0]} alt="" />
                 </div>
                 <div className='arrow'>
-                    <img src="/arrow.png" alt="" />
+                    <img src="/arrow.png" className='right' alt="" />
                 </div>
             </div>
             <div className="bigImage">
