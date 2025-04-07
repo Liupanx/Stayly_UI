@@ -54,6 +54,14 @@ function Chat() {
                             <p>Hi there! It's still avaliable!</p>
                             <span>1 hour ago</span>
                         </div>
+                        <div className="chatMessage own">
+                            <p>Hi there! It's still avaliable!</p>
+                            <span>1 hour ago</span>
+                        </div>
+                        <div className="chatMessage">
+                            <p>Hi there! It's still avaliable!</p>
+                            <span>1 hour ago</span>
+                        </div>
                     </div>
                     <div className="bottom">
                         <textarea></textarea>
